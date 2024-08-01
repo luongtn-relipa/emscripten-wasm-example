@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <math.h>
-#include <emscripten.h>
+// #include <emscripten.h>
 
-EMSCRIPTEN_KEEPALIVE
+// EMSCRIPTEN_KEEPALIVE
 int add(int a, int b) {
     return a + b;
 }
 
-EMSCRIPTEN_KEEPALIVE
+// EMSCRIPTEN_KEEPALIVE
 int isPrime(int n) {
     if (n < 2) return 0;
     for (int i = 2; i <= sqrt(n); i++) {
